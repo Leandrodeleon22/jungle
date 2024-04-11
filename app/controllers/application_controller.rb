@@ -29,4 +29,14 @@ class ApplicationController < ActionController::Base
     }
     cookies[:cart]
   end
+
+  def purchase_list
+
+  
+
+    @order.line_items.each do |item| 
+      item
+    end
+  end
+  helper_method :purchase_list
 end
