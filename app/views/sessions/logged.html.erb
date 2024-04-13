@@ -1,0 +1,16 @@
+<style>
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+</style>
+
+<div class="centered">
+  <h1>Logged in as <span class="underlined"><%= current_user.email %></h1>
+</div>
+
+<div class="centered">
+  <%= link_to 'Return to the home page', root_path, class: 'btn btn-primary' %>
+</div>
